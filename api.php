@@ -17,6 +17,7 @@ use App\Http\Controllers\ApiProductController;
 Route::get('contact', [App\Http\Controllers\API\ContactController::class, 'index']);
 Route::post('contact', [App\Http\Controllers\API\ContactController::class, 'store']);
 Route::get('contact/{id}', [App\Http\Controllers\API\ContactController::class, 'show']);
+Route::put('contact/{id}', [App\Http\Controllers\API\ContactController::class, 'update']);
 
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
